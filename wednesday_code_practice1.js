@@ -34,3 +34,11 @@ summands.forEach(function(summand){
   alert(total += summand)  //alert the subtotals
 });
 alert(total)   //the final total
+
+
+///#################################################
+//Wednesday: Practice - Looping in Arrays  --code  Make an array of your friends' names. Loop through it and alert() a greeting to each
+var myFriends = ['Robert','George','Sam','Beatrice','David','Naomi','mike','Maggie','Kim'];
+myFriends.forEach(function(myFriend) {
+  alert('Hallo ' + myFriend + '!');
+});
