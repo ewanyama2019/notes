@@ -68,3 +68,40 @@ var doubleNumbers = numbers.map(function(number){
 return(number * 2);
 });
 alert(doubleNumbers);
+
+
+///#####  Array.map  --- multiply numbers in an array
+var result = 1;
+var numbers = [1,2,3,4,5,6,7,8,9,10];
+var arraymultiplied = numbers.map(function(number){
+return (result *= number);
+});
+alert(arraymultiplied)
+
+//############ Array.map  -using fat Arrow --- multiply numbers in an array
+var result = 1;
+var oddNumbers = [1,3,5,7,9,11,13,15,17,19];
+var arrayOddMultiply = oddNumbers.map(number => result *= number);
+alert(arrayOddMultiply);
+
+
+///======PRACTICE ARRAYS.MAP MAPPING ARRAYS=========================================######################
+// Practice - Arrays.map CODE - Make an array of numbers, then use .map() to return an array containing each of the original numbers + 1.
+
+var twentyNumbers = [1,2,3,4,5,6,7,8,9,10,12,13,15,16,171,18,99,98,233,44];
+var twentyNumbersPlusOne = twentyNumbers.map(function(twentyNumber){
+  return(twentyNumber +=1)
+});
+alert(twentyNumbersPlusOne);
+
+
+var twentyNumbers = [1,2,3,4,5,6,7,8,9,10,12,13,15,16,171,18,99,98,233,44];
+var twentyNumbersPlusOne = twentyNumbers.map(twentyNumber => twentyNumber +=1);
+alert(twentyNumbersPlusOne);
+
+// Practice - Arrays.map CODE - Create an array of words. Use .map() to return an array of the same words in all uppercase
+var lowerCases = ['today','tomorrow','care','little','now','want','original','great'];
+var upperCases = lowerCases.map(function(lowerCase){
+  return(lowerCase.toUpperCase());
+});
+alert(upperCases);
