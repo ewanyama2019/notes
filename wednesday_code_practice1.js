@@ -42,3 +42,11 @@ var myFriends = ['Robert','George','Sam','Beatrice','David','Naomi','mike','Magg
 myFriends.forEach(function(myFriend) {
   alert('Hallo ' + myFriend + '!');
 });
+
+///#################################################
+//Wednesday: Practice - Looping in Arrays  --Write a loop to multiply an arbitrary amount of numbers.
+var result = 1  ;
+var multiplys = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+multiplys.forEach(function(multiply) {
+  alert(result *= multiply);
+  });
