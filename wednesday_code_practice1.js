@@ -12,7 +12,7 @@ parents[0]; //Access one of your parents' names using the square bracket notatio
 
 
 /////////////////////////////////////////////////////////////////////////////////
-//looping in Arrays
+//looping in Arrays  ## forEach ##
 var languages = ['HTML','CSS','JavaScript'];
   languages.forEach(function(language){
     alert('I love ' + language + '!');
@@ -50,3 +50,21 @@ var multiplys = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 multiplys.forEach(function(multiply) {
   alert(result *= multiply);
   });
+
+
+////// ----  Array Mapping  -----///////
+//1st case using Array.forEach
+var numbers = [1,2,3,4,5];
+var doubleNumbers = [];
+numbers.forEach(function(number) {
+  doubleNumbers.push(number * 2);
+});
+alert(doubleNumbers);
+
+//2nd case using Array.Mapping
+var numbers = [1,2,3,4,5];
+
+var doubleNumbers = numbers.map(function(number){
+return(number * 2);
+});
+alert(doubleNumbers);
